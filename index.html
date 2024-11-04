@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Countdown Timer</h1>
+  </div>
+<div class="btn">
+  <button id="openModalBtn">Select Date</button>
+</div>
+    <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="content">  
+        <div class="inputcontent">
+          <label style="color: black; font-weight: bold; font-size: x-large;" for="datetime">Select a future date and time:</label>
+          <input style="color: black;" type="datetime-local" id="datetime" required>
+        </div>
+        <button id="startBtn">Start Timer</button>
+      </div>
+  
+    </div>
+    </div>
+
+    <div class="output">
+      <div id="countdown">Time left: </div>
+      <div style="color: rgba(255, 255, 255, 0.5);" id="message">00d 00h 00m 00s</div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

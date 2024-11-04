@@ -1,0 +1,119 @@
+/* Modal (hidden by default) */
+*{
+    color: rgba(255, 255, 255, 1);
+}
+.header{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 80px;
+}
+.btn{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    border: solid rgba(214, 209, 209, 0.733) 1px;
+    border-radius: 1rem;
+    height: 3rem;
+    width: 10rem;
+    color: rgba(0, 0, 0, 1);
+    font-size: larger;
+    font-weight: bold;
+    background-color:rgba(255, 255, 255, 0.6);
+}
+button:hover{
+    background-color: grey;
+    border: solid black 1px;
+}
+body{
+ background-image: url("./360_F_86561234_8HJdzg2iBlPap18K38mbyetKfdw1oNrm.jpg");
+ background-size: cover;
+}
+
+.modal {
+    display: none; 
+    /* align-items: center;
+    justify-content: center; */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    color: rgba(0, 0, 0, 1);
+  }
+  
+  /* Modal content box */
+  .modal-content {
+      height: 50%;
+      background-color: rgba(255,255,255,0.7);
+      margin: 10% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      border-radius: 5rem;
+      /* width: 80%;  */
+      width: 40%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      color: black;
+    }
+    
+    .content{
+        height: 100%;
+        /* width: 100%; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+  }
+  
+  span{
+    color: black ;
+  }
+  
+  .inputcontent{
+    padding: 2rem;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  /* Close button (X) */
+  .close {
+    color: #000000;
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 2rem 2rem 1rem;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #921111;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .output{
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  #countdown{
+    height: 15%;
+    font-size: xx-large;
+  }
+
+  #message{
+    height: 85%;
+    font-size:13rem;
+  }
